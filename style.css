@@ -1,0 +1,101 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Nunito", sans-serif;
+  height: 100vh;
+  background-image: url(/img/blob-scene-haikei.svg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #fafafa;
+}
+
+main {
+  text-align: center;
+  max-width: 450px;
+  margin: 0 auto;
+  padding-top: 100px;
+}
+
+.wrapper-login {
+  background-color: #221f3b;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px;
+  gap: 10px;
+  border-radius: 15px;
+  margin: 30px 0;
+  position: relative;
+  box-shadow: 0.5rem 0.5rem rgba(255, 255, 255, 0.233);
+}
+
+label {
+  align-self: flex-start;
+  font-size: 1rem;
+  padding-left: 5px;
+  font-weight: 400;
+}
+
+input {
+  background-color: #5c5578;
+  width: 100%;
+  border: none;
+  padding: 20px 0;
+  border-radius: 15px;
+}
+
+h1 {
+  text-transform: lowercase;
+  font-weight: 700;
+  font-size: 4em;
+}
+h2 {
+  margin-bottom: 20px;
+}
+
+button {
+  background-color: #fafafa;
+  font-weight: 900;
+  text-transform: uppercase;
+  max-width: max-content;
+  padding: 15px 40px;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0.4em 0.4em #5c5578;
+  margin-top: 20px;
+}
+
+button:hover {
+  transform: translate(-0.1em, -0.1em);
+  box-shadow: 0.45em 0.45em #5c5578;
+  cursor: pointer;
+}
+
+button:active {
+  transform: translate(0.1em, 0.1em);
+  box-shadow: 0.2em 0.2em #5c5578;
+}
+
+Input::-webkit-input-placeholder {
+  color: #272530;
+  font-family: "Nunito", sans-serif;
+  padding: 0 15px;
+}
+
+Input:-moz-placeholder {
+  font-family: "Nunito", sans-serif;
+}
+
+a {
+  color: #5c5578;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
