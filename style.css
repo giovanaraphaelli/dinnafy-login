@@ -35,19 +35,38 @@ main {
   box-shadow: 0.5rem 0.5rem rgba(255, 255, 255, 0.233);
 }
 
-label {
-  align-self: flex-start;
-  font-size: 1rem;
-  padding-left: 5px;
-  font-weight: 400;
+.wrapper-login .user-box {
+  width: 100%;
+  position: relative;
+}
+.wrapper-login .user-box input {
+  width: 100%;
+  padding: 15px 10px;
+  font-size: 16px;
+  color: #fafafa;
+  margin-bottom: 30px;
+  border: none;
+  border-radius: 15px;
+  outline: none;
+  background: #5c5578;
+}
+.wrapper-login .user-box label {
+  position: absolute;
+  top: 0;
+  left: 10px;
+  padding: 10px 0;
+  font-size: 16px;
+  color: #fafafa;
+  pointer-events: none;
+  transition: 0.5s;
 }
 
-input {
-  background-color: #5c5578;
-  width: 100%;
-  border: none;
-  padding: 20px 0;
-  border-radius: 15px;
+.wrapper-login .user-box input:focus ~ label,
+.wrapper-login .user-box input:valid ~ label {
+  top: -25px;
+  left: 5px;
+  color: #fafafa;
+  font-size: 12px;
 }
 
 h1 {
@@ -80,16 +99,6 @@ button:hover {
 button:active {
   transform: translate(0.1em, 0.1em);
   box-shadow: 0.2em 0.2em #5c5578;
-}
-
-Input::-webkit-input-placeholder {
-  color: #272530;
-  font-family: "Nunito", sans-serif;
-  padding: 0 15px;
-}
-
-Input:-moz-placeholder {
-  font-family: "Nunito", sans-serif;
 }
 
 a {
