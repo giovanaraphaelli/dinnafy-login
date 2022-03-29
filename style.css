@@ -80,6 +80,9 @@ h1 {
 h2 {
   margin-bottom: 20px;
 }
+fieldset {
+  border: none;
+}
 
 input[type="checkbox"]:hover {
   cursor: pointer;
